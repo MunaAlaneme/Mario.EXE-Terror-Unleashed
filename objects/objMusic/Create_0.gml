@@ -1,0 +1,1 @@
+audio_play_sound(SMB_Overworld, 0, true);
