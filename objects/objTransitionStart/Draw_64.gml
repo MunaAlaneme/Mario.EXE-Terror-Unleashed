@@ -3,7 +3,7 @@ var i, k, spriteFrameCount = sprite_get_number(spr_Transition), spriteWidth = sp
 
 if (transition) {
 	if (transitionSubImg < spriteFrameCount + (room_width/spriteWidth))	{	
-		transitionSubImg += transitionSpeed;
+		transitionSubImg += (transitionSpeed*120*delta_time/1000000);;
 	} else {
 		room_goto(ToRoom)
 		transition = false;

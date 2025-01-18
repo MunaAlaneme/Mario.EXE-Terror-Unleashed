@@ -1,7 +1,7 @@
 // @diest64 transitions
 var i, k, spriteFrameCount = sprite_get_number(spr_Transition), spriteWidth = sprite_get_width(spr_Transition), spriteHeight = sprite_get_height(spr_Transition);
 
-transitionSubImg -= transitionSpeed;
+transitionSubImg -= (transitionSpeed*120*delta_time/1000000);;
 if (transitionSubImg < ((-2-room_width)/192)) {
 	instance_destroy(objTransitionEnd);
 }
